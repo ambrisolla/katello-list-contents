@@ -7,12 +7,12 @@ from   requests.auth import HTTPBasicAuth
 class KatelloRepos:
   
   def __init__(self, **kwargs):
-    self.fullpath = os.path.abspath(os.path.dirname(__file__))
     self.settings = self.load_settings(kwargs['env'])
 
   def load_settings(self, env):
     try:
-      yaml_data = open(f'{self.fullpath}/settings.yaml', 'r').read()
+      fullpath = os.path.abspath(os.path.dirname(__file__))
+      yaml_data = open(f'{fullpath}/settings.yaml', 'r').read()
       data = yaml.safe_load(yaml_data)
       return data[env]
     except Exception as err:
@@ -73,4 +73,3 @@ class KatelloRepos:
       return {
         'messsage' : str(err)
       }, 500
-
