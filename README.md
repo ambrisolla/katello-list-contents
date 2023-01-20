@@ -1,6 +1,6 @@
 # Simulação
 
-Obs: Alterar configurações de acesso a API do Foreman/Katello
+Obs: Alterar configurações de acesso a API do Foreman/Katello no arquivo : <a href='settings.yaml'>settings.yaml</b><b>
 
 ```python
 k = KatelloRepos(env='nprod')
