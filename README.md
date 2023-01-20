@@ -1,5 +1,7 @@
 # Simulação
 
+Obs: Alterar configurações de acesso a API do Foreman/Katello
+
 ```python
 k = KatelloRepos(env='nprod')
 
