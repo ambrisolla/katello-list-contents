@@ -1,0 +1,12 @@
+nprod:
+  api_url: https://katello.qa.example.com
+  username: some_username
+  password: some_password
+  use_ssl: false
+  organization_id: 1
+prod:
+  api_url: https://katello.example.com
+  username: some_username
+  password: some_password
+  use_ssl: true
+  organization_id: 1
