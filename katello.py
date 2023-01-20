@@ -74,12 +74,3 @@ class KatelloRepos:
         'messsage' : str(err)
       }, 500
 
-''' simulacao '''
-k = KatelloRepos(env='nprod')
-
-# escolhendo uma opcao do dropdown acti
-ak_id = k.get_activation_keys()[0]['id']
-
-# obtendo as informacoees do produto passando o id da actiovation_key
-data = k.get_repositories_of_an_activation_key(activation_key=ak_id)
-print(json.dumps(data))
